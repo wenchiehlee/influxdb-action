@@ -1,7 +1,15 @@
 # This is a basic workflow to help you get started with Actions
 
 name: 'InfluxDB Action'
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 description: 'Install and configure InfluxDB and the InfluxDB CLI.'
+
 branding:
   icon: 'database'
   color: 'gray-dark'
